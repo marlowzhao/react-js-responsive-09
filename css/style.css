@@ -1,3 +1,7 @@
+html{
+  font-size: .9rem;
+}
+
 body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -6,33 +10,52 @@ body {
     margin: 0;
 }
 
+header{
+  min-height: 100vh;
+  /* position: relative; */
+  align-items: center;
+  display:flex;
+}
+
+
+
 .container {
-    width: 570px;
+  /* set width will have prpblems,but max witdh is helpful */
+    /* max-width: 570px; */
     margin: 0 auto;
+    align-items: center;
+}
+
+/* .portfolio{
+  max-width: 570px;
+  margin: 0 auto;
+} */
+ img {
+  max-width:100%;
 }
 
 h1,
 h2 {
-    font-weight: 300; 
+    font-weight: 300;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 3.75rem;
     margin-top: 0;
 }
 
 h2 {
-    font-size: 42px;
+    font-size: 2.65rem;
     margin-top: 0;
     border-top: solid 1px #c4c4c4;
     border-bottom: solid 1px #c4c4c4;
-    
-    padding: 20px 0;
-    margin-bottom: 20px;
+
+    padding: 0.5em 0;
+    margin-bottom: 0.5em;
 }
 
 h3 {
-    font-size: 36px;
+    font-size: 2.75rem;
     font-weight: 900;
     margin-bottom: 0;
 }
@@ -42,11 +65,11 @@ h3 {
 }
 
 h1 .accent-text {
-    font-size: 80px;
+    font-size: 5rem;
 }
 
 h2 .accent-text {
-    font-size: 60px;
+    font-size: 3.75rem;
 }
 
 .accent-text,
@@ -71,13 +94,13 @@ a:focus {
 }
 
 .small-text {
-    font-size: 16px;
-    margin-top: 5px;
-} 
+    font-size: 1rem;
+    margin-top: 0.315em;
+}
 
 header,
 section {
-    padding: 100px 0;
+    padding: 0.625em 0;
 }
 
 .inverse {
@@ -96,12 +119,81 @@ section {
     color: #252525;
     text-decoration: none;
     background: #99D930;
-    padding: 10px 25px;
-    margin-top: 25px;
+    padding: 0.625em 1.625em;
+    margin-top: 1.5625rem;
 }
 
 .btn:hover,
 .btn:focus {
     background: #252525;
     color: #fff;
+}
+
+@media (min-width:600px){
+  html{
+    font-size: 1.3125rem;
+  }
+
+}
+
+@media (max-width:600px){
+  .container{
+    padding-left:10px;
+    padding-right:10px;
+  }
+}
+
+@media (min-width: 750px){
+
+  .large-page{
+    display:flex;
+ }
+ .articles-inverse{
+  background: #99D930;
+  /* color: #131313; */
+ }
+
+ .articles-inverse .btn{
+  background:#252525;
+  color:#fff;
+ }
+
+ .articles-inverse .btn:hover {
+     background: #fff;
+     color: #252525;
+ }
+
+ .articles-inverse .accent-text,
+ .articles-inverse a,
+ .name,
+ time{
+  color: #252525;
+ }
+ .articles-inverse h2{
+  border-color: black;
+ }
+/* portfolio page */
+
+  .portfolio{
+    min-height: 100vh;
+    color:#fff;
+    background-color: #252525;
+    align-items: center;
+    display: flex;
+}
+  .portfolio .container{
+    max-width: 1200px;
+  }
+  .work{
+    display:flex;
+    justify-content: space-around;
+  }
+  .portfolio-item{
+    width: 30%;
+  }
+  .portfolio-item img{
+    width:100%;
+    height: 15em;
+    object-fit: cover;
+  }
 }
