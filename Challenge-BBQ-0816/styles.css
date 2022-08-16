@@ -1,0 +1,77 @@
+
+/* color:
+orange #F18119
+black #404040
+white #FFF
+grey #5A5A5A
+ */
+body{
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+  color: #404040;
+  margin:0;
+  text-align: center;
+}
+
+.left-page{
+   background-image: url('../Challenge-BBQ-0816/images/dark-ribs.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-color: #404040;
+   display:flex;
+   flex-direction: column;
+  }
+
+ .left-page h1{
+  color:  #FFF;
+ }
+
+.left-title{
+  font-weight: 900;
+}
+ .top-text,
+ .left-subtitle{
+  color:#F18119;
+  text-transform:uppercase;
+ }
+
+ /* right part */
+
+
+.right-form{
+  display: flex;
+  flex-direction: column;
+  width:253px;
+  /* align-items: center; */
+}
+
+.right-subtitle{
+  color:#F18119;
+  text-transform: uppercase;
+}
+
+.right-page-description{
+  font-size: 23px;
+  padding: 24px;
+  color:#5A5A5A;
+}
+.fine-print{
+  letter-spacing: 1.3px;
+}
+
+
+
+@media (min-width: 570px) {
+  body{
+    font-size:1.15;
+    display: flex;
+    /* flex-direction:row; */
+  }
+  .left-page{
+    width:100%;
+  }
+  .right-page{
+    width:100%;
+  }
+}
