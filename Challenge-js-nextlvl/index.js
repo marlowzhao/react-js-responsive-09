@@ -1,36 +1,11 @@
 import characterData from './data.js'
+import {Character} from './Character.js'
 
-function getDiceRollArray(diceCount){
-  const newArray = new Array(diceCount).fill(0)
-  return newArray.map(function(){
-    return Math.floor(Math.random()*6)+1});
-}
-
-
-function Character(data){
-  Object.assign(this, data)
-
-  this.getDiceHtml = function(diceCount){
-    return getDiceRollArray(diceCount).map(number => `<div class="dice">${number}</div>`).join('');
-  }
-
-  this.getCharacterHtml=function(){
-  const {elementID, namen, avatar, health, diceCount} = this
-  let diceHtml = this.getDiceHtml(diceCount)
-
-  return `<div class="character-card">
-      <h4 class="name"> ${namen}</h4>
-      <img class="avatar" src="${avatar}"/>
-      <p class="health">health: <b> ${health} </b></p>
-      <div class="dice-container">${diceHtml} </div></div>
-    </div>`;
-  }
-}
 
 
 function render(){
-  document.getElementById(orc.elementID).innerHTML=orc.getCharacterHtml()
-  document.getElementById(wizard.elementID).innerHTML=wizard.getCharacterHtml()
+  document.getElementById("hero").innerHTML=orc.getCharacterHtml()
+  document.getElementById("monster").innerHTML=wizard.getCharacterHtml()
 }
 
 const wizard= new Character(characterData.hero)
