@@ -9,7 +9,7 @@ grey #5A5A5A
  */
 body{
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: #404040;
   margin:0;
   text-align: center;
@@ -24,12 +24,15 @@ body{
    background-repeat: no-repeat;
    display:flex;
    flex-direction: column;
+   min-height: 50vh;
+   justify-content: space-between;
   }
 
  .left-page h1{
   color:  #FFF;
   font-size: 3.55rem;
   font-weight: 300;
+  padding: 0 10px;
   }
  strong{font-weight: 900;}
 
@@ -40,26 +43,22 @@ body{
  }
 
  .top-text{
-  left:50%;
-  margin-left: 25%;
-  margin-right:25%;
+  letter-spacing: 1px;
+  font-size: 0.725rem;
+  font-weight: 900;
   border-top:5px solid #F18119;
-  padding: left 0; ;
-  margin-top: 0;
+  padding-top: 2px;
+  margin: 0 auto;
   order:-1;
-  /* width:50%; */
  }
+
  /* right part */
-
-
 .right-form{
   display: flex;
   flex-direction: column;
   width:80%;
   max-width: 300px;
   margin: 0 auto;
-  /* border: 3px solid; */
-  /* align-items: center; */
 }
 .right-form input{
   font-family:inherit;
@@ -72,8 +71,6 @@ body{
 .right-form input:focus{
   transform: scale(1.05);
 }
-
-
 
 .btn{
   font-weight: 900;
@@ -92,10 +89,13 @@ body{
   transform:scale(1.05)
 }
 
-
+.right-page h2{
+  margin-bottom: 0;
+}
 .right-subtitle{
   color:#F18119;
   text-transform: uppercase;
+  margin-top: 5px;
 }
 
 .right-page-description{
@@ -113,7 +113,6 @@ body{
   body{
     font-size:1.15;
     display: flex;
-    /* flex-direction:row; */
   }
   .left-page{
     min-height:50vh;
