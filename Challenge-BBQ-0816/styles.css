@@ -1,4 +1,6 @@
-
+*{
+  box-sizing:border-box;
+}
 /* color:
 orange #F18119
 black #404040
@@ -7,7 +9,7 @@ grey #5A5A5A
  */
 body{
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 1rem;
+  font-size: 1.125rem;
   color: #404040;
   margin:0;
   text-align: center;
@@ -17,34 +19,79 @@ body{
    background-image: url('../Challenge-BBQ-0816/images/dark-ribs.jpg');
    background-size: cover;
    background-position: center;
+   background-color: #40404056;
+   background-blend-mode: multiply;
    background-repeat: no-repeat;
-   background-color: #404040;
    display:flex;
    flex-direction: column;
   }
 
  .left-page h1{
   color:  #FFF;
- }
+  font-size: 3.55rem;
+  font-weight: 300;
+  }
+ strong{font-weight: 900;}
 
-.left-title{
-  font-weight: 900;
-}
  .top-text,
  .left-subtitle{
   color:#F18119;
   text-transform:uppercase;
  }
 
+ .top-text{
+  left:50%;
+  margin-left: 25%;
+  margin-right:25%;
+  border-top:5px solid #F18119;
+  padding: left 0; ;
+  margin-top: 0;
+  order:-1;
+  /* width:50%; */
+ }
  /* right part */
 
 
 .right-form{
   display: flex;
   flex-direction: column;
-  width:253px;
+  width:80%;
+  max-width: 300px;
+  margin: 0 auto;
+  /* border: 3px solid; */
   /* align-items: center; */
 }
+.right-form input{
+  font-family:inherit;
+  text-align: inherit;
+  margin-bottom: .75em;
+  padding: .25em;
+  transform: scale(1);
+  transform:200ms;
+}
+.right-form input:focus{
+  transform: scale(1.05);
+}
+
+
+
+.btn{
+  font-weight: 900;
+  font-size: 0.625em;
+  color:white;
+  padding:1em 1.4em;
+  background-image: linear-gradient(45deg, #ff713b, #ffa51d);
+  border:0;
+  transform:scale(1);
+}
+.btn:hover{
+  cursor: pointer;
+  background:#ff713b;
+  /* color: black; */
+  transition: 100ms;
+  transform:scale(1.05)
+}
+
 
 .right-subtitle{
   color:#F18119;
@@ -69,9 +116,17 @@ body{
     /* flex-direction:row; */
   }
   .left-page{
-    width:100%;
+    min-height:50vh;
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
   }
   .right-page{
-    width:100%;
+    width:50%;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
   }
 }
