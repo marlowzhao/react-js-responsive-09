@@ -5,5 +5,8 @@ document.getElementById("button").addEventListener("click", function(){
   .then((response)=>response.json())
   .then((data)=>{
     document.getElementById("changeable").textContent =data.activity
+    document.getElementById("info").textContent= '🤖 HappyBotY🦿 '
+    document.getElementById("button").textContent='🦾 YEY🤖 '
+    document.getElementById("container").classList.add("try")
   })
 })
