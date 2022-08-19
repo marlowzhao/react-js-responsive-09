@@ -10,35 +10,35 @@ function getNewMonster(){
 }
 
 function attack() {
-if(!isWaiting){
-  wizard.getDiceHtml()
-  monster.getDiceHtml()
-  wizard.takeDamage(monster.currentDiceScore)
-  monster.takeDamage(wizard.currentDiceScore)
-  render()
+  if(!isWaiting){
+    wizard.getDiceHtml()
+    monster.getDiceHtml()
+    wizard.takeDamage(monster.currentDiceScore)
+    monster.takeDamage(wizard.currentDiceScore)
+    render()
 
-  if (wizard.dead ){
-    endGame()
-      }else if(monster.dead){
-    if(monstersArray.length>0){
-      setTimeout(()=>{
-        monster = getNewMonster()
-        render()
-        isWaiting=false
-      },1500)
-    }else{
+    if (wizard.dead){
       endGame()
-      }
+        }else if(monster.dead){
+      if(monstersArray.length>0){
+        setTimeout(()=>{
+          monster = getNewMonster()
+          render()
+          isWaiting=false
+        },1500)
+      }else{
+        endGame()
+        }
+    }
   }
-}
 }
 
 function endGame(){
   isWaiting=true
   const endMessage = wizard.health===0 && monster.health===0 ?
   "both die, no winner!" :
-  wizard.health > 0 ? "wizard wins" :
-  "Orc wins"
+  wizard.health > 0 ? "Wizard wins" :
+  "Monster wins"
 
   const endEmoji = wizard.health > 0 ? "🔮" : "☠️"
   setTimeout(()=>{
