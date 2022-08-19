@@ -2,24 +2,36 @@
   box-sizing: border-box;
   font-family: Source Sans Pro;
 }
-html, body {
-    margin: 0;
-    padding: 0;
+body {
+    margin-top: 10px;
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
 
+/* card */
+.card{
+  padding:0;
+  margin: 0 auto;
+  display:flex;
+  flex-direction:column;
+  max-width:800px;
 }
+/* left side, img */
 
-.landing-page{
-  background-image: url('../img/tech.jpg');
-  background-position: center;
-  background-size:cover;
-  background-repeat:no-repeat;
-  height:35%;
- }
+.card-img{
+  object-fit: cover;
+  min-width:0;
+  min-height: 0;
+  flex-basis:230px;
+  background-color: #111D4A;
+  }
 
  /* main page */
 .main{
   background-color: #111D4A;
-  padding: 35px;
+  padding: 0 35px;
   height:65%;
   display: flex;
   flex-direction:column;
@@ -29,61 +41,57 @@ html, body {
 .main h1{
   color:#05cbe9;
   font-size: 28px;
+  line-height: 1.5;
+  margin:0;
+  padding-top:0;
 }
 
-.main p{
-  color: grey;
+.main-p{
+  color: white;
+  opacity: 0.6;
   font-size: 16px;
+  line-height: 1.5;
 }
-
 .main-bottom{
  display:flex;
- flex-direction:column;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+.main-bottom p{
+  color:white;
+  opacity:.6;
 }
 
-.main-bottom-digit{
-  padding-bottom: 0px;
-  line-height:0;
-}
-
-.main-bottom-words{
- display: flex;
- justify-content:space-between;
- flex-direction:row;
- align-items: stretch;
-}
-
-.main-bottom-words p{
-  margin-top:0;
-}
 .main button{
   background-color:#05cbe9;
   border: none;
-  font-size: 20px;
-  padding: 5px 38px;
+  font-size: 1.25rem;
+  padding: 5px 30px;
   cursor:pointer;
 }
 
 @media(min-width:570px){
-  body{
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    align-items:flex-start;
-  }
+  .card{
+      flex-direction:row;
+    }
+
+  .card-img{
+    height:300px;
+    }
 
   .main h1{
-    font-size: 36px;
+    font-size: 2.25rem;
   }
+
   .main p{
-    font-size: 18px;
+    font-size: 1.125rem;
   }
-  .landing-page{
-    width: 33%;
-    min-height:70vh;
+
+  .card-img{
+      min-height:100%;
   }
   .main{
-    width:57%;
-    min-height:70vh;
-  }
+    max-width:600px;
+    }
 }
