@@ -1,4 +1,89 @@
+*{
+  box-sizing: border-box;
+  font-family: Source Sans Pro;
+}
 html, body {
     margin: 0;
     padding: 0;
+
+}
+
+.landing-page{
+  background-image: url('../img/tech.jpg');
+  background-position: center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  height:35%;
+ }
+
+ /* main page */
+.main{
+  background-color: #111D4A;
+  padding: 35px;
+  height:65%;
+  display: flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.main h1{
+  color:#05cbe9;
+  font-size: 28px;
+}
+
+.main p{
+  color: grey;
+  font-size: 16px;
+}
+
+.main-bottom{
+ display:flex;
+ flex-direction:column;
+}
+
+.main-bottom-digit{
+  padding-bottom: 0px;
+  line-height:0;
+}
+
+.main-bottom-words{
+ display: flex;
+ justify-content:space-between;
+ flex-direction:row;
+ align-items: stretch;
+}
+
+.main-bottom-words p{
+  margin-top:0;
+}
+.main button{
+  background-color:#05cbe9;
+  border: none;
+  font-size: 20px;
+  padding: 5px 38px;
+  cursor:pointer;
+}
+
+@media(min-width:570px){
+  body{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:flex-start;
+  }
+
+  .main h1{
+    font-size: 36px;
+  }
+  .main p{
+    font-size: 18px;
+  }
+  .landing-page{
+    width: 33%;
+    min-height:70vh;
+  }
+  .main{
+    width:57%;
+    min-height:70vh;
+  }
 }
