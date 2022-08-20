@@ -1,24 +1,36 @@
+let postsArray=[]
+
+const titleInput =document.getElementById("post-title")
+const contentInput = document.getElementById("post-content")
+const form = document.getElementById("post-form")
+
+function renderPosts(){
+  let html= ""
+  for(post of postsArray){
+    html += `
+      <h2 class="post-title">${post.title}</h2>
+      <p>${post.body}</p>
+      <hr>
+    `
+  }
+  document.getElementById("blog-list").innerHTML=html
+}
 
 fetch("https://apis.scrimba.com/jsonplaceholder/posts")
 .then(res=>res.json())
 .then(data=>{
-  const postArray=data.slice(0,5)
-  // let postHtml=""
-  // for(let post of postArray){
-  //   postHtml += `<h2>${post.title}</h2><p>${post.body}</p>`
-  // }
-  let postHtml = postArray.map(post => `<h2 class="post-title">${post.title}</h2><p>${post.body}</p><hr>`)
-  document.getElementById("blog-list").innerHTML = postHtml.join('')
+  postsArray=data.slice(0,5)
+  renderPosts()
   })
 
 
   document.getElementById("post-form").addEventListener("submit", function(event){
     event.preventDefault()
-    const aTitle=document.getElementById("post-title").value
-    const aContent=document.getElementById("post-content").value
+    const aTitle=titleInput.value
+    const aContent=contentInput.value
     const aPost={
       title: aTitle,
-      content:aContent
+      body:aContent
     }
     const options = {
       method:"POST",
@@ -31,8 +43,11 @@ fetch("https://apis.scrimba.com/jsonplaceholder/posts")
     fetch("https://apis.scrimba.com/jsonplaceholder/posts", options)
     .then(res=>res.json())
     .then(aPost=> {
-      document.getElementById("blog-list").innerHTML=`
-      <h2 class="post-title">${aPost.title}</h2><p>${aPost.content}</p><hr>
-      ${document.getElementById("blog-list").innerHTML}`
+      postsArray.unshift(aPost)
+      renderPosts()
+      // document.getElementById("blog-list").innerHTML=`
+      // <h2 class="post-title">${aPost.title}</h2><p>${aPost.content}</p><hr>
+      // ${document.getElementById("blog-list").innerHTML}`
+      form.reset()
     })
   })
