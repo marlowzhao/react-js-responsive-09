@@ -1,0 +1,54 @@
+body{
+  background-image: url('./img/pocker.png');
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.info{
+  text-align: center;
+}
+
+#card-load{
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  }
+
+.card-slot{
+  height: 280px;
+  width: 200px;
+  border: 1px solid white;
+  border-radius: 10px;
+
+}
+
+.insert{
+   height: 100%;;
+}
+
+.players{
+  display:flex;
+  justify-content: space-around;
+  /* background-color: rgb(48, 54, 54); */
+  color: white;
+}
+
+
+button{
+  margin-top: 10px;
+  border-style: none;
+  background-color: rgba(102, 51, 153, 0.681);
+  border-radius: 8px;
+  padding: 24px;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+button:hover{
+  transform: scale(1.03);
+  cursor: pointer;
+  background-color: rebeccapurple;
+  transition: 0.2s;
+}
