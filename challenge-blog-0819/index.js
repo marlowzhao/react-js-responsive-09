@@ -9,7 +9,7 @@ function renderPosts(){
   for(post of postsArray){
     html += `
       <h2 class="post-title">${post.title}</h2>
-      <p>${post.body}</p>
+      <p>"${post.body}"</p>
       <hr>
     `
   }
@@ -19,7 +19,7 @@ function renderPosts(){
 fetch("https://apis.scrimba.com/jsonplaceholder/posts")
 .then(res=>res.json())
 .then(data=>{
-  postsArray=data.slice(0,5)
+  postsArray=data.slice(0,4)
   renderPosts()
   })
 
