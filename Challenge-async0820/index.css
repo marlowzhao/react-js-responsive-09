@@ -2,11 +2,19 @@ body{
   background-image: url('./img/pocker.png');
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.5rem;
-  color: white;
+  color: #DBF1A1;
+  line-height: 0.7;
 }
 
-.info{
+.playground{
   text-align: center;
+  margin:0 auto;
+  max-width: 700px;
+}
+.info{
+
+  display:flex;
+  justify-content: space-between;
   /* background-color: aliceblue; */
 }
 
@@ -14,13 +22,15 @@ body{
   height: 400px;
   display: flex;
   justify-content: space-around;
+  padding-top: 0px;
+  padding-bottom: 0px;
   align-items: center;
   }
 
 .card-slot{
   height: 280px;
   width: 200px;
-  border: 1px solid white;
+  border: 1px solid #DBF1A1;
   border-radius: 10px;
 
 }
@@ -32,14 +42,12 @@ body{
 .players{
   display:flex;
   justify-content: space-around;
-  /* background-color: rgb(48, 54, 54); */
-  color: white;
+  color: #DBF1A1;
 }
-
 
 button{
   border-style: none;
-  background-color: rgba(102, 51, 153, 0.681);
+  background-color: #5D7814;
   height: 130px;
   width:130px;
   border-radius: 50%;
@@ -49,9 +57,10 @@ button{
 
 }
 
+
 button:hover{
   transform: scale(1.03);
   cursor: pointer;
-  background-color: rebeccapurple;
+  background-color: #3A5000;
   transition: 0.2s;
 }
