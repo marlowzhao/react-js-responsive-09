@@ -1,0 +1,40 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  text-shadow: 1px 1px 2px black;
+}
+
+body {
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: whitesmoke;
+}
+
+.container{
+ height: 90vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+.weather{
+  display:flex;
+  justify-content: space-between;
+  margin-left:16px;
+  margin-right:16px;
+}
+
+.realtime{
+  display:flex;
+  margin:0 auto;
+ }
+
+.author-info{
+  display:flex;
+  align-items: flex-start;
+  margin-left:16px;
+  margin-right:16px;
+}
