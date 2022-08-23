@@ -1,7 +1,11 @@
 html, body {
+  font-family: 'Alumni Sans', sans-serif;
+  font-family: 'Alumni Sans Inline One', cursive;
   margin: 0;
   padding: 0;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 1px black;
+  font-size: 1.5rem;
+  font-weight: 200;
 }
 
 body {
@@ -10,21 +14,40 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: whitesmoke;
+  color: white;
+  opacity: .9;
 }
 
 .container{
- height: 90vh;
+ height: 100vh;
  display: flex;
  flex-direction: column;
  justify-content: space-between;
+ line-height: 1.5;
+ letter-spacing: 1px;
 }
+
+.current-location{
+  display: flex;
+  align-items: center;
+  padding:10px;
+}
+
 
 .weather{
   display:flex;
   justify-content: space-between;
   margin-left:16px;
   margin-right:16px;
+  font-size: 1.25rem;
+ }
+
+.realtime{
+  display:flex;
+  flex-direction: column;
+  border-radius: 15px;
+  padding:10px;
+  font-size: 2.75rem;
 }
 
 .realtime{
@@ -37,4 +60,23 @@ body {
   align-items: flex-start;
   margin-left:16px;
   margin-right:16px;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 570px){
+  .weather{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    line-height: 1;
+    }
+
+  #location,
+  .weather,
+  .author-info{
+    margin-left:10px;
+    margin-right:10px;
+    font-size: 1.125rem;
+  }
 }
