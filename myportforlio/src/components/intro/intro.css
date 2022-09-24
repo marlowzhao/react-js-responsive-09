@@ -1,7 +1,6 @@
 .i{
   display:flex;
   height:100vh;
-  background-color: #EFEEEF;
 }
 .i-left{
   flex:1;
@@ -13,9 +12,9 @@
 .i-left-wrapper{
   padding: 50px;
   height: 50%;
-
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 
@@ -25,7 +24,7 @@
 }
 
 .i-name{
-  font-size: 50px;
+  font-size: 4.5rem;
 }
 
 .i-title{
@@ -33,28 +32,35 @@
   overflow: hidden;
 }
 
-.i-title-wrapper{
-  height:100%;
-  animation: moving 6s ease-in-out infinite alternate
-}
-
-@keyframes moving{
-  25%{ transform: translateY(-50px);}
-  50%{ transform: translateY(-100px);}
-  100%{ transform: translateY(-200px);}
-}
-
 .i-title-item{
   height:50px;
   font-size: 30px;
   font-weight:bold;
-  color:#ff4e00;;
-
+  color:#ff4e00;
+  display: flex;
   align-items: center;
 }
 
-.i-img{
-  width:100%;
+.i-title-wrapper{
   height:100%;
+  animation: move 9s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  25%{ transform: translateY(-50px);}
+  50%{ transform: translateY(-100px);}
+  75%{ transform: translateY(-150px);}
+  100%{ transform: translateY(-200px);}
+}
+
+.i-desc{
+  font-size:24px;
+  font-weight: 300;
+}
+
+.i-img{
+  margin-top: 40px;
+  width:80%;
+  height:80%;
   object-fit: cover;
 }

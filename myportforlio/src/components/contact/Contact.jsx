@@ -1,6 +1,9 @@
 import "./contact.css";
 //import icons
 import { useRef, useState } from "react";
+import Tele from "../../img/phone.png";
+import Email from "../../img/email.png";
+import Address from "../../img/location.png";
 import emailjs from '@emailjs/browser';
 
 const Contact=()=>{
@@ -27,31 +30,30 @@ const Contact=()=>{
 
   return (
     <div className="c">
-      <div className="c-bg"></div>
+      {/* <div className="c-bg"></div> */}
         <div className="c-wrapper">
           <div className="c-left">
             <h1 className="c-title">let's talk about my projects</h1>
             <div className="c-info">
               <div className="c-info-item">
-                <img src="" alt="phone-icon" className="c-icon" />
+                <img src={Tele} alt="phone-icon" className="c-icon" />
                 +49 1753486797
               </div>
               <div className="c-info-item">
-                <img src="" alt="email-icon" className="c-icon" />
+                <img src={Email} alt="email-icon" className="c-icon" />
                 marlowzhao@163.com
               </div>
               <div className="c-info-item">
-                <img src="" alt="address-icon" className="c-icon" />
-                Leonorenstrasse 36A Berlin
+                <img src={Address} alt="address-icon" className="c-icon" />
+                Steglitz, Berlin, Germany
               </div>
             </div>
-
-          </div>`
-
+          </div>
+          
           <div className="c-right">
             <p className="c-desc">
-              <b>seek help? </b>
-              <b>let's talk about possibilities for further cooperation</b>
+              <b>Looking for projects? </b>
+              Let's talk about possibilities for further cooperation
             </p>
               <form ref={formRef} onSubmit={handleSubmit}>
                 <input type="text" placeholder="Name" name="user_name"/>
