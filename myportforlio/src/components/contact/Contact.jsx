@@ -1,23 +1,28 @@
 import "./contact.css";
 //import icons
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 
 const Contact=()=>{
   const formRef= useRef()
-
+  const [done, setDone]=useState(false)
   const handleSubmit=(e)=> {
     e.preventDefault();
-    emailjs.sendForm('service_hrkqvwz',
-      'template_jznto9l',
-      formRef.current,
-      'HDe5nyLCaKGs1Nf-H')
+    emailjs
+      .sendForm(
+        'service_hrkqvwz',
+        'template_jznto9l',
+        formRef.current,
+        'HDe5nyLCaKGs1Nf-H')
 
-      .then((result) => {
+      .then(
+        (result) => {
           console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+          setDone(true)
+        },
+          (error) => {
+            console.log(error.text);
+        });
   }
 
   return (
@@ -54,6 +59,7 @@ const Contact=()=>{
                 <input type="text" placeholder="Email" name="user_email"/>
                 <textarea rows="5" placeholder="Message" name="message"></textarea>
                 <button>Submit</button>
+                {done && "Message sent successfully!"}
               </form>
           </div>
         </div>
