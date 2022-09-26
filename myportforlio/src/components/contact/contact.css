@@ -96,6 +96,7 @@ button:hover{
   }
   .c-wrapper{
     flex-direction: column;
+    padding-left:0px;
     height:100%;
   }
 
