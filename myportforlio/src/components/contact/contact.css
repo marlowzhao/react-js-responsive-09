@@ -47,17 +47,21 @@
   margin-right: 15px;
 }
 .c-desc{
+  width: 70%;
   font-weight:200;
+  font-size: 24px;
 }
 
 form{
   margin-top: 20px;
+  flex-direction: column;
 }
 
 input{
   width:50%;
-  height: 50px;
+  height: 45px;
   border:none;
+  background-color: #EFEEEF;
   border-bottom: 1px solid black;
   margin:10px 0px;
   font-size: 14px;
@@ -69,6 +73,7 @@ textarea{
   margin:10px 0px;
   font-size: 14px;
   padding-left: 10px;
+  background-color: #EFEEEF;
 }
 
 button{
@@ -78,4 +83,27 @@ button{
   color:white;
   font-weight: 500;
   cursor: pointer
+}
+
+button:hover{
+  background-color: red;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 570px){
+  .c{
+    height:100%;
+  }
+  .c-wrapper{
+    flex-direction: column;
+    height:100%;
+  }
+
+  .c-info-item{
+    margin: 20px 0px;
+    font-weight: 300;
+  }
+  .c-right{
+    margin-top: 50px;
+  }
 }

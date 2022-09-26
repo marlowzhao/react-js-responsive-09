@@ -49,19 +49,20 @@ const Contact=()=>{
               </div>
             </div>
           </div>
-          
+
           <div className="c-right">
             <p className="c-desc">
-              <b>Looking for projects? </b>
-              Let's talk about possibilities for further cooperation
+              <b>Wanting to know more?</b>
+              Let's talk about the projects
             </p>
               <form ref={formRef} onSubmit={handleSubmit}>
                 <input type="text" placeholder="Name" name="user_name"/>
                 <input type="text" placeholder="Subject" name="user_subject"/>
                 <input type="text" placeholder="Email" name="user_email"/>
-                <textarea rows="5" placeholder="Message" name="message"></textarea>
-                <button>Submit</button>
+                <textarea rows="5" placeholder="Write your message here" name="message"></textarea>
                 {done && "Message sent successfully!"}
+                <br/>
+                <button>Submit</button>
               </form>
           </div>
         </div>

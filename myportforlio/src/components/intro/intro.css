@@ -64,3 +64,31 @@
   height:80%;
   object-fit: cover;
 }
+
+@media screen and (max-width: 570px){
+  .i{
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .i-left{
+    text-align: left;
+  }
+
+  .i-left-wrapper{
+    padding: 40px;
+    align-items: left;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .i-desc{
+    display: none;
+  }
+
+  .i-img {
+    height:50%;
+    width: 50%;
+    margin-left: 40px;
+  }
+}

@@ -27,3 +27,31 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 570px){
+  .pl{
+    padding: 5px;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .pl-tittle{
+    text-align: left;
+    margin-left: 20px;
+  }
+  .pl-text{
+    width:80%;
+  }
+
+  .pl-desc{
+    margin-left:20px;
+    text-align: left;
+    font-size: 24px;
+    font-weight:300;
+   }
+
+   .pl-list{
+      justify-content: center;
+      width: 70%;
+    }
+}
