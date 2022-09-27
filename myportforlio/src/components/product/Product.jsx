@@ -1,9 +1,13 @@
-import "./product.css"
+import "./product.css";
+// import chebu from "../../productimgs/culture-shot.png";
+// `../../productimgs/${props.image}`
 
-const Product=()=>{
+const Product=(props)=>{
   return(
     <div className="p">
-      card
+
+      <a href={props.link} target="_blank" rel="noreferrer" className="p-link">{props.title}</a>
+      <img src={`../productimgs/${props.coverImage}`} alt="p-img" className="p-insert" />
     </div>
   )
 }

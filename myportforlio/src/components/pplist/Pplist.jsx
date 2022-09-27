@@ -1,7 +1,19 @@
-import Product from "../product/Product"
-import "./pplist.css"
+import Product from "../product/Product";
+import "./pplist.css";
+import { productData } from "../../productData";
+
+
 
 const Prolist =()=>{
+  const allProducts = productData.map(photo=> {
+  return (
+    <Product
+      key={photo.id}
+      {...photo}
+    />
+  )
+})
+
   return(
     <div className="pl">
       <div className="pl-text">
@@ -11,9 +23,7 @@ const Prolist =()=>{
       </div>
 
       <div className="pl-list">
-        <Product/>
-        <Product/>
-        <Product/>
+        {allProducts}
       </div>
     </div>
 
