@@ -1,0 +1,12 @@
+import "./techstack.css";
+
+const Techstack=(props)=>{
+  return (
+    <div className="t-icon">
+      <img src={`./stackimgs/${props.image}`} alt="icon" className="t-img"/>
+      <p className="t-desc">{props.title}</p>
+    </div>
+  )
+}
+
+export default Techstack

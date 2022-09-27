@@ -21,6 +21,7 @@ const App = () => {
     color: darkMode && "#EFEEEF"}}>
         <Header />
         <Toggle />
+
         <Routes>
           <Route exact path="/" element={<Intro />}/>
           <Route path="/about" element={<About />}/>

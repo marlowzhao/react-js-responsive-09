@@ -1,6 +1,6 @@
 import "./product.css";
-// import chebu from "../../productimgs/culture-shot.png";
-// `../../productimgs/${props.image}`
+
+
 
 const Product=(props)=>{
   return(
@@ -8,6 +8,7 @@ const Product=(props)=>{
 
       <a href={props.link} target="_blank" rel="noreferrer" className="p-link">{props.title}</a>
       <img src={`../productimgs/${props.coverImage}`} alt="p-img" className="p-insert" />
+
     </div>
   )
 }

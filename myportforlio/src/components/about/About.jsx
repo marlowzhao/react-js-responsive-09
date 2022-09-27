@@ -1,16 +1,19 @@
 import "./about.css"
+// import Techstack from "../techstack/Techstack";
+import { iconData } from "../../iconData.js"
+import Techstack from "../techstack/Techstack"
 
 const About=()=>{
+  const techIcons = iconData.map(icon => {
+  return <Techstack
+    key={icon.id}
+    {...icon}/>
+  })
+
   return(
     <div className="a">
       <div className="a-left">
-        <div className="a-card bg"></div>
-        <div className="a-card">
-          <img src="https://bjphotography.in/wp-content/uploads/2018/09/found-photographer.jpg"
-            alt="photographer"
-            className="a-img"
-          />
-        </div>
+        { techIcons }
       </div>
 
       <div className="a-right">
