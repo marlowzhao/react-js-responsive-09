@@ -1,28 +1,33 @@
 
 .p{
  width: 30%;
- height: 40vh;
- margin: 20px 10px;
- border: 2px solid grey;
+ height: 30vh;
+ margin: 10px 10px;
+ border: 2px solid rgb(164, 161, 161);
  border-radius: 5px 5px 0px 0px;
  overflow: hidden;
-}
-
-.p-insert{
-  height: 100%;
+ line-height: 200%;
 }
 
 .p-link{
   color: #ff4e00;
   text-decoration: none;
 }
-.p-link:hover{
-  transform: scaleX(1.2);
+
+
+.p-insert{
+  width: 100%;
+  transition: all 3s ease;
 }
 
+.p:hover .p-insert{
+  transform: scale(1.1);
+}
 @media screen and (max-width: 570px){
 .p{
-  width:50%;
-  height: 20vh;
-}
+  width: 75%;
+  height: 25vh;
+  line-height: 150%;
+ }
+
 }

@@ -1,9 +1,12 @@
 import "./contact.css";
 import React, { useRef, useState } from "react";
-import Tele from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/location.png";
+import GitHub from "../../img/github.png";
+import Linkedin from "../../img/linkedin.png";
 import emailjs from '@emailjs/browser';
+import { useContext } from "react";
+import { ThemeContext } from "../../context";
 
 const Contact=()=>{
   const formRef= useRef()
@@ -27,16 +30,25 @@ const Contact=()=>{
         });
   }
 
+  const theme =useContext(ThemeContext)
+  const darkMode = theme.state.darkMode
+
   return (
     <div className="c" id="contact">
-      {/* <div className="c-bg"></div> */}
         <div className="c-wrapper">
           <div className="c-left">
-            <h1 className="c-title">let's talk about my projects</h1>
+            <h1 className="c-title">Talk about my projects</h1>
             <div className="c-info">
+            <div className="c-info-item">
+                <img src={GitHub} alt="gh-icon" className="c-icon" />
+                <a href="https://github.com/marlowzhao" target="_blank" className="c-anchor" style={{color: darkMode && "#EFEEEF"}}>View my project code </a>
+              </div>
               <div className="c-info-item">
-                <img src={Tele} alt="phone-icon" className="c-icon" />
-                +49 1753486797
+                <img src={Linkedin} alt="lkin-icon" className="c-icon" />
+                <a href="https://www.linkedin.com/in/jszhao/"
+                  target="_blank" className="c-anchor"
+                  style={{color: darkMode && "#EFEEEF"}}>Find me on LinkedIn
+                </a>
               </div>
               <div className="c-info-item">
                 <img src={Email} alt="email-icon" className="c-icon" />
@@ -51,14 +63,14 @@ const Contact=()=>{
 
           <div className="c-right">
             <p className="c-desc">
-              <b>Wanting to know more?</b>
-              Let's talk about the projects
+              <b>Wanting to know more? </b>
+              Leave your message below!
             </p>
-              <form ref={formRef} onSubmit={handleSubmit}>
-                <input type="text" placeholder="Name" name="user_name"/>
-                <input type="text" placeholder="Subject" name="user_subject"/>
-                <input type="text" placeholder="Email" name="user_email"/>
-                <textarea rows="5" placeholder="Write your message here" name="message"></textarea>
+              <form ref={formRef} onSubmit={handleSubmit} >
+                <input type="text" placeholder="Name" name="user_name" style={{backgroundColor: darkMode? "#232221" : "#EFEEEF"}}/>
+                <input type="text" placeholder="Subject" name="user_subject" style={{backgroundColor: darkMode? "#232221" : "#EFEEEF"}}/>
+                <input type="text" placeholder="Email" name="user_email" style={{backgroundColor: darkMode? "#232221" : "#EFEEEF"}}/>
+                <textarea rows="5" placeholder="Write your message here" name="message" style={{backgroundColor: darkMode? "#232221" : "#EFEEEF"}}></textarea>
                 {done && "Message sent successfully!"}
                 <br/>
                 <button>Submit</button>

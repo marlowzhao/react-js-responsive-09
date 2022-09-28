@@ -1,6 +1,7 @@
 .pl{
   height:100vh;
   padding: 50px 100px;
+  margin-top: 40px;
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -24,6 +25,7 @@
 
 .pl-list{
   width:100%;
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
 }

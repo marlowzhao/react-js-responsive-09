@@ -23,9 +23,9 @@ const About=()=>{
         </p>
         <p className="a-text">
           I used to work as a translator and customer manager in the international education
-          sector in China. In 2019 I moved to Germany and spent a few years learning German and topping
-          up my business skills. In 2021 I found my true house in web development, completed an immersive
-          web dev bootcamp, and deveted my time to React and JavaScript.
+          sector in Shanghai, China. In 2019 I moved to Germany and spent my time learning German and topping
+          up my business knowledge. In 2021 I found my true house in web development, completed an immersive
+          web dev bootcamp, and started to devote my time to JavaScript and React.
         </p>
       </div>
 
