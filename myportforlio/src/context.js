@@ -1,7 +1,7 @@
-import { createContext, useReducer } from "react"
+import React, { createContext, useReducer } from "react"
+
 
 export const ThemeContext=createContext();
-
 const INITIAL_STATE = { darkMode: false};
 
 const themeReducer=(state, action)=>{

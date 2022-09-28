@@ -1,4 +1,5 @@
 import "./techstack.css";
+import React from "react";
 
 const Techstack=(props)=>{
   return (

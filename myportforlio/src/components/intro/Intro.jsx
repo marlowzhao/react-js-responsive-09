@@ -1,5 +1,6 @@
-import "./intro.css"
-import Chebu from "../../img/portrait.png"
+import "./intro.css";
+import Chebu from "../../img/portrait.png";
+import React from "react";
 
 const Intro = () =>{
 return(

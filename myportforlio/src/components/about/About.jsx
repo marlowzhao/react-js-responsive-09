@@ -1,7 +1,7 @@
-import "./about.css"
-// import Techstack from "../techstack/Techstack";
-import { iconData } from "../../iconData.js"
-import Techstack from "../techstack/Techstack"
+import "./about.css";
+import { iconData } from "../../iconData.js";
+import Techstack from "../techstack/Techstack";
+import React from "react";
 
 const About=()=>{
   const techIcons = iconData.map(icon => {
@@ -11,7 +11,7 @@ const About=()=>{
   })
 
   return(
-    <div className="a">
+    <div className="a" id="about">
       <div className="a-left">
         { techIcons }
       </div>

@@ -2,6 +2,10 @@
   height: 40px;
   display: flex;
   padding-left: 40px;
+  position: fixed;
+  top:10px;
+  left: 10px;
+  z-index: 999;
 }
 
 .header-item{

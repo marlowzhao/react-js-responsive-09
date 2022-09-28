@@ -1,15 +1,15 @@
-import {Link} from "react-router-dom";
-import "./header.css";
 
+import "./header.css";
+import React from "react";
+import { HashLink as Link} from "react-router-hash-link";
 
 const Header=()=>{
 
   return(
     <div className="mheader">
-        <Link className="header-item" to="/">Intro</Link>
-        <Link className="header-item" to="/about">About</Link>
-        <Link className="header-item" to="/mywork">Work</Link>
-        <Link className="header-item" to="/contact">Contact</Link>
+      <Link className="header-item" to="#about">About Me</Link>
+      <Link className="header-item" to="#work">My Work</Link>
+      <Link className="header-item" to="#contact">Contact</Link>
     </div>
   )
 }

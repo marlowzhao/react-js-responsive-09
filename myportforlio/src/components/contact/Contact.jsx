@@ -1,6 +1,5 @@
 import "./contact.css";
-//import icons
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import Tele from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/location.png";
@@ -29,7 +28,7 @@ const Contact=()=>{
   }
 
   return (
-    <div className="c">
+    <div className="c" id="contact">
       {/* <div className="c-bg"></div> */}
         <div className="c-wrapper">
           <div className="c-left">

@@ -6,12 +6,13 @@ import { ThemeProvider } from "./context"
 
 ReactDOM.render(
   <React.StrictMode>
-
+<Router>
     <ThemeProvider>
-      <Router>
+
         <App />
-      </Router>
+
     </ThemeProvider>
+</Router>
 
   </React.StrictMode>,
   document.getElementById('root')
