@@ -28,8 +28,8 @@ body{
   }
 
 .card-slot{
-  height: 280px;
-  width: 200px;
+  height: 279px;
+  width: 199px;
   border: 1px solid #DBF1A1;
   border-radius: 10px;
 
@@ -48,9 +48,9 @@ body{
 button{
   border-style: none;
   background-color: #5D7814;
-  height: 130px;
+  height: 50px;
   width:130px;
-  border-radius: 50%;
+  border-radius: 5px;
   color: white;
   font-family: 'Courier New', Courier, monospace;
   font-size: 15px;
