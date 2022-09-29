@@ -54,9 +54,8 @@
 }
 
 .c-anchor:hover{
-  text-decoration: none;
-  animation: pulse 1s infinite;
-  animation-timing-function: linear;
+  text-decoration: underline;
+  transform: scale(1.05);
  }
 
 .c-desc{

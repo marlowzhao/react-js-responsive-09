@@ -1,4 +1,4 @@
-import { ThemeContext, ThemeProvider } from "../../context";
+import { ThemeContext} from "../../context";
 import "./toggle.css";
 import React, { useContext } from "react";
 

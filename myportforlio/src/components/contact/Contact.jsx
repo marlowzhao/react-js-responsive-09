@@ -41,12 +41,12 @@ const Contact=()=>{
             <div className="c-info">
             <div className="c-info-item">
                 <img src={GitHub} alt="gh-icon" className="c-icon" />
-                <a href="https://github.com/marlowzhao" target="_blank" className="c-anchor" style={{color: darkMode && "#EFEEEF"}}>View my project code </a>
+                <a href="https://github.com/marlowzhao" rel="noopener noreferrer" target="_blank" className="c-anchor" style={{color: darkMode && "#EFEEEF"}}>View my project code </a>
               </div>
               <div className="c-info-item">
                 <img src={Linkedin} alt="lkin-icon" className="c-icon" />
                 <a href="https://www.linkedin.com/in/jszhao/"
-                  target="_blank" className="c-anchor"
+                  target="_blank" rel="noopener noreferrer" className="c-anchor"
                   style={{color: darkMode && "#EFEEEF"}}>Find me on LinkedIn
                 </a>
               </div>
@@ -67,10 +67,10 @@ const Contact=()=>{
               Leave your message below!
             </p>
               <form ref={formRef} onSubmit={handleSubmit} >
-                <input type="text" placeholder="Name" name="user_name" style={{backgroundColor: darkMode? "#232221" : "#EFEEEF"}}/>
-                <input type="text" placeholder="Subject" name="user_subject" style={{backgroundColor: darkMode? "#232221" : "#EFEEEF"}}/>
-                <input type="text" placeholder="Email" name="user_email" style={{backgroundColor: darkMode? "#232221" : "#EFEEEF"}}/>
-                <textarea rows="5" placeholder="Write your message here" name="message" style={{backgroundColor: darkMode? "#232221" : "#EFEEEF"}}></textarea>
+                <input type="text" required placeholder="Name*" name="user_name" style={{backgroundColor: darkMode? "#232221" : "#EFEEEF"}}/>
+                <input type="text" required placeholder="Subject*" name="user_subject" style={{backgroundColor: darkMode? "#232221" : "#EFEEEF"}}/>
+                <input type="text" required placeholder="Email*" name="user_email" style={{backgroundColor: darkMode? "#232221" : "#EFEEEF"}}/>
+                <textarea rows="5" required placeholder="Write your message here*" name="message" style={{backgroundColor: darkMode? "#232221" : "#EFEEEF"}}></textarea>
                 {done && "Message sent successfully!"}
                 <br/>
                 <button>Submit</button>
