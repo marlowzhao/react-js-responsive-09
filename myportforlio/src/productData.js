@@ -9,14 +9,15 @@ export const productData =[
 
   {
     id: 2,
+    title: "Foodie's Guide",
+    coverImage: "foodiesguide.png",
+    link: "https://youtrack.jetbrains.com/issue/WEB-53058",
+  },
+
+  {
+    id: 3,
     title: "Hobby Lobby",
     coverImage: "hobby-lobby.png",
     link: "https://hobby-lobby-project.herokuapp.com/",
-  },
-  {
-    id: 3,
-    title: "My Reading List",
-    coverImage: "hobby-lobby.png",
-    link: "https://youtrack.jetbrains.com/issue/WEB-53058",
   },
 ]
