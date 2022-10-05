@@ -12,14 +12,8 @@ const About=()=>{
 
   return(
     <div className="a" id="about">
-      <div className="a-left">
-        <p className="a-left-up">MY TECH STACK</p>
-        <div className="a-left-low">
-          { techIcons }
-        </div>
-      </div>
 
-      <div className="a-right">
+      <div className="a-left">
         <h1 className="a-title">ABOUT ME</h1>
         <p className="a-sub">
           Keep learning and coding
@@ -33,6 +27,12 @@ const About=()=>{
         </p>
       </div>
 
+      <div className="a-right">
+        <p className="a-right-up">MY TECH STACK</p>
+        <div className="a-right-low">
+          { techIcons }
+        </div>
+      </div>
     </div>
   )
 }

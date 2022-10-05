@@ -24,13 +24,17 @@
  }
 
 .t-desc{
-  font-weight: 300;
+  font-weight: 200;
   margin: auto;
 }
 
 @media screen and (max-width: 570px){
-  .t-img{
-    width: 60px;
-    height: 50px;
+  .t-icons{
+    padding: 6px 24px;
   }
+  .t-img{
+    width: 42px;
+    height: 42px;
+  }
+
 }

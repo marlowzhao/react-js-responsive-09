@@ -5,8 +5,13 @@ import React from "react";
 const Intro = () =>{
 return(
   <div className="i">
-    <div className="i-left">
-      <div className="i-left-wrapper">
+
+   <div className="i-right">
+       <img src={Chebu} className="i-img" alt="chebu"></img>
+    </div>
+
+    <div className="i-right">
+      <div className="i-right-wrapper">
         <h2 className="i-intro">Hi, my name is</h2>
         <h1 className="i-name"> JINSHENG ZHAO</h1>
         <div className="i-title">
@@ -25,9 +30,7 @@ return(
       </div>
     </div>
 
-    <div className="i-right">
-       <img src={Chebu} className="i-img" alt="chebu"></img>
-    </div>
+
   </div>
 
   )
