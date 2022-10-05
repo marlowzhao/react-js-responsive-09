@@ -45,7 +45,7 @@
 .a-sub{
   font-size: 30px;
   font-weight:bold;
-  color:#ff4e00;
+  color:var(--orange);
   margin: 20px 0px;
 }
 
@@ -53,6 +53,7 @@
 .a-text{
   font-size: 24px;
   font-weight:300;
+  line-height: 1.2;
 }
 
 @media screen and (max-width: 570px){

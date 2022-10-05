@@ -17,7 +17,7 @@ const Prolist =()=>{
   return(
     <div className="pl" id="work">
       <div className="pl-text">
-        <h1 className="pl-tittle"> My Work </h1>
+        <h1 className="pl-tittle"> MY WORK </h1>
         <p className="pl-desc"> Here is the work I did during the bootcamp and later
         from my independent study, where you can see my progress!</p>
       </div>

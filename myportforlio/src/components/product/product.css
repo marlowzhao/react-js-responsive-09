@@ -3,15 +3,15 @@
  width: 30%;
  height: 30vh;
  margin: 10px 10px;
- border: 1px solid rgb(164, 161, 161);
  border-radius: 5px 5px 0px 0px;
  opacity: 0.9;
+ box-shadow: 0px -1px 5px 0px var(--orange);
  overflow: hidden;
  line-height: 200%;
 }
 
 .p-link{
-  color: #ff4e00;
+  color: var(--orange);
   text-decoration: none;
 }
 
@@ -22,9 +22,10 @@
 }
 
 .p:hover{
-  box-shadow: 0px -5px 10px 0px #ff4e00;
+  box-shadow: 0px -5px 10px 0px var(--orange);
   transform: scale(1.1);
   text-decoration: underline;
+  transition:0.7s;
   opacity: 1;
 }
 

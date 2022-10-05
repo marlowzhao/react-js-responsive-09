@@ -17,7 +17,7 @@
   font-size: 16px;
   justify-content: center;
   text-decoration: none;
-  color: #ff4e00;
+  color: var(--orange);
 }
 
 .header-item:hover{

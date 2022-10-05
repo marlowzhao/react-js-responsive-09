@@ -1,15 +1,4 @@
-.c{
-  height:100vh;
-  /* position: relative; */
-}
 
-/* .c-bg{
-  width:20px;
-  height:100%;
-  background-color: #ff4e00;
-  position:absolute;
-  margin-right:50px;
-  } */
 
 .c-wrapper{
   padding:50px;
@@ -31,7 +20,7 @@
 .c-title{
   font-size: 30px;
   width: 70%;
-  color:#ff4e00;
+  color:var(--orange);
 }
 
 
@@ -91,7 +80,7 @@ textarea{
 button{
   border:none;
   padding:15px;
-  background: #ff4e00;
+  background: var(--orange);
   color:white;
   font-weight: 500;
   cursor: pointer
