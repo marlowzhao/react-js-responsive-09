@@ -20,7 +20,7 @@ return(
         </div>
         <div className="i-desc">
           I like building things with the latest web development tech stack and am working
-          to move into the tech field. Now I am focused on Javascript and React.
+          to move into the tech field. Now I am focusing on Javascript and React.
         </div>
       </div>
     </div>

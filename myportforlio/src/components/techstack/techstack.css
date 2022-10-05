@@ -1,26 +1,36 @@
 
-.t-icon{
-  height: 10%;
-  width: 10%;
+.t-icons{
+  height: 20%;
+  width: 14%;
   display: flex;
   flex-wrap: wrap;
-  padding: 10px;
-  margin:10px;
+  padding: 5px;
+  margin:5px;
 }
 
 .t-img{
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 70px;
+  margin:auto;
   object-fit:contain;
+  border-radius: 2px;
+  box-shadow: 0px -1px 5px 0px #ff4e00;
 }
 
 .t-img:hover{
-  transform: scale(1.2);
-  box-shadow: 0px -5px 10px 0px #ff4e00;
-  transition: 0.5s;
+  transform: scale(1.1);
+  transition: 0.3s;
+  box-shadow: 0px -3px 10px 0px #ff4e00;
  }
 
 .t-desc{
   font-weight: 300;
-  font-size: 1em;
+  margin: auto;
+}
+
+@media screen and (max-width: 570px){
+  .t-img{
+    width: 60px;
+    height: 50px;
+  }
 }

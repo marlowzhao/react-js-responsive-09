@@ -19,7 +19,7 @@ const Prolist =()=>{
       <div className="pl-text">
         <h1 className="pl-tittle"> My Work </h1>
         <p className="pl-desc"> Here is the work I did during the bootcamp and later
-        during my independent study, where you can see my progress!</p>
+        from my independent study, where you can see my progress!</p>
       </div>
 
       <div className="pl-list">

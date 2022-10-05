@@ -13,7 +13,10 @@ const About=()=>{
   return(
     <div className="a" id="about">
       <div className="a-left">
-        { techIcons }
+        <p className="a-left-up">MY TECH STACK</p>
+        <div className="a-left-low">
+          { techIcons }
+        </div>
       </div>
 
       <div className="a-right">
