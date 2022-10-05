@@ -11,7 +11,7 @@ export const productData =[
     id: 2,
     title: "Foodie's Guide",
     coverImage: "foodiesguide.png",
-    link: "https://youtrack.jetbrains.com/issue/WEB-53058",
+    link: "https://foodies-guide.vercel.app/",
   },
 
   {
