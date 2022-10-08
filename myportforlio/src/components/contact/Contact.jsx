@@ -63,7 +63,7 @@ const Contact=()=>{
 
           <div className="c-right">
             <p className="c-desc">
-              <b>Wanting to know more? </b>
+              <b>Any questions? </b>
               Leave your message below!
             </p>
               <form ref={formRef} onSubmit={handleSubmit} >

@@ -3,7 +3,6 @@ import "./pplist.css";
 import { productData } from "../../productData";
 import React from "react";
 
-
 const Prolist =()=>{
   const allProducts = productData.map(photo=> {
   return (
@@ -16,14 +15,13 @@ const Prolist =()=>{
 
   return(
     <div className="pl" id="work">
-      <div className="pl-text">
-        <h1 className="pl-tittle"> MY WORK </h1>
-        <p className="pl-desc"> Here is the work I did during the bootcamp and later
-        from my independent study, where you can see my progress!</p>
-      </div>
-
       <div className="pl-list">
         {allProducts}
+      </div>
+      <div className="pl-text">
+        <h1 className="pl-tittle"> MY WORK </h1>
+        <p className="pl-desc"> Check out the projects I did during the bootcamp and later
+        from my independent study. </p>
       </div>
     </div>
 

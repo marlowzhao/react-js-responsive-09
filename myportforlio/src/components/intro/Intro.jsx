@@ -6,7 +6,7 @@ const Intro = () =>{
 return(
   <div className="i">
 
-   <div className="i-right">
+   <div className="i-left">
        <img src={Chebu} className="i-img" alt="chebu"></img>
     </div>
 
@@ -24,8 +24,8 @@ return(
           </div>
         </div>
         <div className="i-desc">
-          I like building things with the latest web development tech stack and am working
-          to move into the tech field. Now I am focusing on Javascript and React.
+          I build things with the latest tech stack.<br/>
+          Now I am focusing on React and full-stack development.
         </div>
       </div>
     </div>
